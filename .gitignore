@@ -25,4 +25,5 @@ _ReSharper*/
 #Project files
 [Bb]uild/
 
-
+#NuGet
+packages
