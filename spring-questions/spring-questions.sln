@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q7991262-accessing-configur
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8027367-initializing-idictionary-object-property-in-spring-net", "8027367-initializing-idictionary-object-property-in-spring-net\q8027367-initializing-idictionary-object-property-in-spring-net.csproj", "{C68A6DF8-CBE6-4F1B-AA2F-A132A70C5D35}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8029460-spring-net-logging-example", "q8029460\q8029460-spring-net-logging-example.csproj", "{5AAAB706-5C58-47B2-A01A-42E5C25D0687}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -31,6 +33,10 @@ Global
 		{C68A6DF8-CBE6-4F1B-AA2F-A132A70C5D35}.Debug|x86.Build.0 = Debug|x86
 		{C68A6DF8-CBE6-4F1B-AA2F-A132A70C5D35}.Release|x86.ActiveCfg = Release|x86
 		{C68A6DF8-CBE6-4F1B-AA2F-A132A70C5D35}.Release|x86.Build.0 = Release|x86
+		{5AAAB706-5C58-47B2-A01A-42E5C25D0687}.Debug|x86.ActiveCfg = Debug|x86
+		{5AAAB706-5C58-47B2-A01A-42E5C25D0687}.Debug|x86.Build.0 = Debug|x86
+		{5AAAB706-5C58-47B2-A01A-42E5C25D0687}.Release|x86.ActiveCfg = Release|x86
+		{5AAAB706-5C58-47B2-A01A-42E5C25D0687}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
