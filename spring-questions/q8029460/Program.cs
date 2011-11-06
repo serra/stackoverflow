@@ -12,6 +12,8 @@ namespace q8029460
     {
         static void Main(string[] args)
         {
+            var t = new q8029460Tests();
+            t.Main();
             Console.ReadLine();
         }
     }
