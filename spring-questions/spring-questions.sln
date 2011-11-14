@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8027367-initializing-idict
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8029460-spring-net-logging-example", "q8029460\q8029460-spring-net-logging-example.csproj", "{5AAAB706-5C58-47B2-A01A-42E5C25D0687}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8081112-inject-hashtable-in-spring-net", "q8081112-inject-hashtable-in-spring-net\q8081112-inject-hashtable-in-spring-net.csproj", "{6B93D055-B930-41EC-B9BF-7004F6B0DB34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8121697", "q8121697\q8121697.csproj", "{A0EEC258-52D5-459D-ABA1-57298F0D6A28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -37,6 +41,14 @@ Global
 		{5AAAB706-5C58-47B2-A01A-42E5C25D0687}.Debug|x86.Build.0 = Debug|x86
 		{5AAAB706-5C58-47B2-A01A-42E5C25D0687}.Release|x86.ActiveCfg = Release|x86
 		{5AAAB706-5C58-47B2-A01A-42E5C25D0687}.Release|x86.Build.0 = Release|x86
+		{6B93D055-B930-41EC-B9BF-7004F6B0DB34}.Debug|x86.ActiveCfg = Debug|x86
+		{6B93D055-B930-41EC-B9BF-7004F6B0DB34}.Debug|x86.Build.0 = Debug|x86
+		{6B93D055-B930-41EC-B9BF-7004F6B0DB34}.Release|x86.ActiveCfg = Release|x86
+		{6B93D055-B930-41EC-B9BF-7004F6B0DB34}.Release|x86.Build.0 = Release|x86
+		{A0EEC258-52D5-459D-ABA1-57298F0D6A28}.Debug|x86.ActiveCfg = Debug|x86
+		{A0EEC258-52D5-459D-ABA1-57298F0D6A28}.Debug|x86.Build.0 = Debug|x86
+		{A0EEC258-52D5-459D-ABA1-57298F0D6A28}.Release|x86.ActiveCfg = Release|x86
+		{A0EEC258-52D5-459D-ABA1-57298F0D6A28}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

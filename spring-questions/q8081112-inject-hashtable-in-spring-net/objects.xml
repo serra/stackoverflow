@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<objects xmlns="http://www.springframework.net" xmlns:v='http://www.springframework.net/validation'
+         xmlns:aop="http://www.springframework.net/aop" xmlns:db="http://www.springframework.net/db"
+         xmlns:r="http://www.springframework.net/remoting">
+
+  <object id="MyObject" type="q8081112_inject_hashtable_in_spring_net.MyClass, q8081112_inject_hashtable_in_spring_net">
+
+    <property name="MyHashTable">
+      <object type="System.Collections.Hashtable, mscorlib">
+        <constructor-arg name="d">
+          <dictionary>
+            <entry key="key1" value="value1" />
+            <entry key="key2" value="value2" />
+          </dictionary>
+        </constructor-arg>
+      </object>
+    </property>
+
+  </object>
+
+</objects>

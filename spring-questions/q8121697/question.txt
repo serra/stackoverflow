@@ -1,0 +1,14 @@
+﻿http://stackoverflow.com/questions/8121697/how-to-i-shorten-sprint-net-dll-load-times
+
+I'm using Spring.NET and running into problematically long Ioc Container load times. 
+The app context config only has a few (like 10 objects), 
+yet it takes sometimes up to 20 seconds to load the container. 
+I can see in the debugger this time appears to be attributed to loading lots of (DDLs?) with odd names.
+The end result is the Windows Service takes to long to start and the IT operators think it's hung.  
+
+What can I do to avoid this. I've tried "Just My Code". Any ideas?
+
+    'Forge.Enterprise.Infrastructure.Scheduling.Server.vshost.exe' (Managed (v4.0.30319)): Loaded '0xclmvcv'
+    'Forge.Enterprise.Infrastructure.Scheduling.Server.vshost.exe' (Managed (v4.0.30319)): Loaded 'rpuvyhdh'
+    'Forge.Enterprise.Infrastructure.Scheduling.Server.vshost.exe' (Managed (v4.0.30319)): Loaded 'sq10jbae'
+    'Forge.Enterprise.Infrastructure.Scheduling.Server.vshost.exe' (Managed (v4.0.30319)): Loaded 'tmpk4bvl'
