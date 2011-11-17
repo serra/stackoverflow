@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8081112-inject-hashtable-i
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8121697", "q8121697\q8121697.csproj", "{A0EEC258-52D5-459D-ABA1-57298F0D6A28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8167718ExceptionHandlerAdvice", "q8167718ExceptionHandlerAdvice\q8167718ExceptionHandlerAdvice.csproj", "{7732BA3E-BC4B-4FD0-B0C7-61C87BE80A8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -49,6 +51,10 @@ Global
 		{A0EEC258-52D5-459D-ABA1-57298F0D6A28}.Debug|x86.Build.0 = Debug|x86
 		{A0EEC258-52D5-459D-ABA1-57298F0D6A28}.Release|x86.ActiveCfg = Release|x86
 		{A0EEC258-52D5-459D-ABA1-57298F0D6A28}.Release|x86.Build.0 = Release|x86
+		{7732BA3E-BC4B-4FD0-B0C7-61C87BE80A8C}.Debug|x86.ActiveCfg = Debug|x86
+		{7732BA3E-BC4B-4FD0-B0C7-61C87BE80A8C}.Debug|x86.Build.0 = Debug|x86
+		{7732BA3E-BC4B-4FD0-B0C7-61C87BE80A8C}.Release|x86.ActiveCfg = Release|x86
+		{7732BA3E-BC4B-4FD0-B0C7-61C87BE80A8C}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

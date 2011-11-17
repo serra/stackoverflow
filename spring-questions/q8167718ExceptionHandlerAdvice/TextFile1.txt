@@ -1,0 +1,134 @@
+﻿this is my first and also I am beginner in Spring.NET and also AOP. 
+
+I would like use Aspect for Exception Hadling for replacing, wrap and modify my custom exceptions.
+
+First I defined some entity and DAO. From method Save in DAO I will throw my exception.
+
+FYI: This is silly sample 
+
+**Entity:**
+
+    namespace ExceptionHandlingTutorial.Entities
+    {
+        public class Customer
+        {
+            public long Id { get; set; }
+            public string Name { get; set; }
+        }
+    }
+
+**DAO:**
+
+    namespace ExceptionHandlingTutorial.Dao
+    {
+        public interface ICustomerDao
+        {
+            void Save(Customer customer);
+        }
+    
+        public class CustomerDao:ICustomerDao
+        {
+            #region Implementation of ICustomerDao
+    
+            public void Save(Customer customer)
+            {
+                throw new CustomerException(
+                    string.Format("Customer with id {0} already exist in repository",customer.Id));
+            }
+    
+            #endregion
+        }
+    }
+
+**CustomException class definition is here:**
+
+    namespace ExceptionHandlingTutorial
+    {
+        public class CustomerException : Exception
+        {
+            public CustomerException(string msg)
+                : base(msg)
+            {
+                
+            }
+        }
+    }
+
+In app.config I defined `CustomerDao` object and `ExceptionHandlerAdvice` object which only replace `CustomerException` for `System.ArgumentException`.
+
+I am not sure if `ExceptionHandlerAdvice` is auto-proxy and also I don’t how it identified targets.
+
+I believe that it uses SpEL for define rules and when there is some exception it throws check list.
+Ok this type of exception is in list some I will apply advice.
+
+Can anybody explain to me how this aspect identified targets? For example I would like apply this aspect only for a few objects not all.
+
+I use ref documentation Chapter 14.3 Exception handling but I couldnt find these information.
+
+**Here is app.config:**
+
+    <?xml version="1.0" encoding="utf-8" ?>
+    <configuration>
+      
+      <configSections>
+        <sectionGroup name="spring">
+          <section name="context" type="Spring.Context.Support.ContextHandler, Spring.Core"/>
+          <section name="objects" type="Spring.Context.Support.DefaultSectionHandler, Spring.Core"/>
+        </sectionGroup>
+      </configSections>
+    
+      <spring>
+    
+        <context>
+          <resource uri="config://spring/objects"/>
+        </context>
+    
+        <objects xmlns="http://www.springframework.net">
+    
+          <object id="customerDao" 
+                  type="ExceptionHandlingTutorial.Dao.CustomerDao, ExceptionHandlingTutorial"/>
+    
+          <object id="exceptionHandlerAdvice" 
+                  type="Spring.Aspects.Exceptions.ExceptionHandlerAdvice, Spring.Aop">
+            
+            <property name="ExceptionHandlers">
+              <list>
+                <value>on exception name CustomerException replace System.ArgumentException 'Something'</value>
+              </list>
+            </property>
+    
+          </object>
+          
+        </objects>
+        
+      </spring>
+    </configuration>
+
+**My main problem is that if I call method Save on DAO it throw exception type of CustomerException this exception is not replaced. Why?**
+
+
+    try
+                {
+                    var context = ContextRegistry.GetContext();
+                    var customerDao = (ICustomerDao)context["customerDao"];
+    
+                    customerDao.Save(new Customer { Id = 1, Name = "Customer_1" });
+                }
+                catch (Exception ex)
+                {
+                    
+                    Console.WriteLine(string.Format("Exception type: {0}\nException message: {1}\n",
+                        ex.GetType(),ex.Message));
+                }
+
+
+Thrown exception is type of `CustomerException` not `ArgumentException`,
+
+
+Also I tried use DSL for defined rules when advice apply:
+
+    on exception (#e is T(ExceptionHandlingTutorial.CustomerException) translate new System.ArgumentException('XChange, Method Name'+ #method.Name, #e))
+
+But still is throw exception type of CustomerException.
+
+Thank you for help. 

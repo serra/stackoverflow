@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Reflection;
 using System.Xml.Serialization;
+using Moq;
 using NUnit.Framework;
 using Spring.Aop;
 using Spring.Aop.Framework;
@@ -15,14 +16,13 @@ namespace q8121697
         {
             var myObject = new MyClass();
 
-
             // this creates a dynamic assembly 'Spring.Proxy'
             var factory = new ProxyFactory(myObject);
             factory.AddAdvice(new LogCallInterceptor());
             var myProxy = (IMyInterface)factory.GetProxy();
             myProxy.DoSomething();
+            
             Console.WriteLine(Assembly.GetAssembly(myProxy.GetType()).FullName);
-
             Console.WriteLine();
 
             // this creates a dynamic assembly 'Spring.Proxy'
@@ -48,14 +48,13 @@ namespace q8121697
     
 
     [TestFixture]
-    public class DictionaryTests
+    public class Tests
     {
         [Test]
         public void Main()
         {
-            var ctx = new XmlApplicationContext("objects.xml");
-            var o = ctx.GetObject("MyObject");
-            Console.WriteLine(o);
+            var interceptorMock = new Mock<IMethodBeforeAdvice>();
+            interceptorMock.Setup(i => i.Before(It.IsAny<MethodInfo>(), It.Is(), It.IsAny<object>()));
         }
     }
 

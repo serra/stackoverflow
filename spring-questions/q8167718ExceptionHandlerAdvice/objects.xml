@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<objects xmlns="http://www.springframework.net" xmlns:v='http://www.springframework.net/validation'
+         xmlns:aop="http://www.springframework.net/aop" xmlns:db="http://www.springframework.net/db"
+         xmlns:r="http://www.springframework.net/remoting">
+
+  <object id="customerDao"
+          type="q8167718.CustomerDao, q8167718"/>
+
+  <object id="exceptionHandlerAdvice"
+          type="Spring.Aspects.Exceptions.ExceptionHandlerAdvice, Spring.Aop">
+
+    <property name="ExceptionHandlers">
+      <list>
+        <value>on exception name CustomerException replace System.ArgumentException 'Something'</value>
+      </list>
+    </property>
+
+  </object>
+
+  <object id="ExceptionAdvisorForSaveMethods" 
+          type="Spring.Aop.Support.RegularExpressionMethodPointcutAdvisor, Spring.Aop">
+
+    <property name="advice" ref="exceptionHandlerAdvice"/>
+    <property name="patterns">
+      <list>
+        <value>.*Save.*</value>
+      </list>
+    </property>
+
+  </object>
+  
+  <object id="ProxyCreator" 
+          type="Spring.Aop.Framework.AutoProxy.DefaultAdvisorAutoProxyCreator, Spring.Aop" />
+  
+</objects>

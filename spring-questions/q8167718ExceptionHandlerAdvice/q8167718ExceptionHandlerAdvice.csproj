@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A0EEC258-52D5-459D-ABA1-57298F0D6A28}</ProjectGuid>
+    <ProjectGuid>{7732BA3E-BC4B-4FD0-B0C7-61C87BE80A8C}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>q8121697</RootNamespace>
-    <AssemblyName>q8121697</AssemblyName>
+    <RootNamespace>q8167718</RootNamespace>
+    <AssemblyName>q8167718</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -37,14 +37,11 @@
     <ApplicationIcon>so.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>q8121697.Program</StartupObject>
+    <StartupObject>q8167718.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Common.Logging">
       <HintPath>..\packages\Common.Logging.1.2.0\lib\1.0\Common.Logging.dll</HintPath>
-    </Reference>
-    <Reference Include="Moq">
-      <HintPath>..\packages\Moq.4.0.10827\lib\NET40\Moq.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.5.10.11092\lib\nunit.framework.dll</HintPath>
@@ -84,7 +81,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="so.ico" />
-    <Content Include="question.txt" />
+    <Content Include="TextFile1.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
