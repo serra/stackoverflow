@@ -9,12 +9,15 @@ namespace q8167718
     {
         static void Main(string[] args)
         {
+            var context = new XmlApplicationContext("objects.xml");
+            var customerDao = (ICustomerDao)context["customerDao"];
+            
             Console.ReadLine();
         }
     }
 
     [TestFixture]
-    public class DictionaryTests
+    public class Tests
     {
         [Test]
         public void Main()
