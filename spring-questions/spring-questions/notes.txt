@@ -1,0 +1,2 @@
+﻿rename DictionaryTest in template
+
