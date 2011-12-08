@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8167718ExceptionHandlerAdv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8196368", "q8196368\q8196368.csproj", "{3715C71C-3E98-4C74-86E6-C75AA3AB7880}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8256126", "q8256126\q8256126.csproj", "{48049C3A-57CC-4776-837F-E5884207B36C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8433676", "q8433676\q8433676.csproj", "{CC879343-56C6-4283-A93A-DEF298FF0484}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -61,6 +65,14 @@ Global
 		{3715C71C-3E98-4C74-86E6-C75AA3AB7880}.Debug|x86.Build.0 = Debug|x86
 		{3715C71C-3E98-4C74-86E6-C75AA3AB7880}.Release|x86.ActiveCfg = Release|x86
 		{3715C71C-3E98-4C74-86E6-C75AA3AB7880}.Release|x86.Build.0 = Release|x86
+		{48049C3A-57CC-4776-837F-E5884207B36C}.Debug|x86.ActiveCfg = Debug|x86
+		{48049C3A-57CC-4776-837F-E5884207B36C}.Debug|x86.Build.0 = Debug|x86
+		{48049C3A-57CC-4776-837F-E5884207B36C}.Release|x86.ActiveCfg = Release|x86
+		{48049C3A-57CC-4776-837F-E5884207B36C}.Release|x86.Build.0 = Release|x86
+		{CC879343-56C6-4283-A93A-DEF298FF0484}.Debug|x86.ActiveCfg = Debug|x86
+		{CC879343-56C6-4283-A93A-DEF298FF0484}.Debug|x86.Build.0 = Debug|x86
+		{CC879343-56C6-4283-A93A-DEF298FF0484}.Release|x86.ActiveCfg = Release|x86
+		{CC879343-56C6-4283-A93A-DEF298FF0484}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
