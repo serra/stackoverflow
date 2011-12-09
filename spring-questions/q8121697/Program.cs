@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Reflection;
 using System.Xml.Serialization;
-using Moq;
 using NUnit.Framework;
 using Spring.Aop;
 using Spring.Aop.Framework;
@@ -53,8 +52,8 @@ namespace q8121697
         [Test]
         public void Main()
         {
-            var interceptorMock = new Mock<IMethodBeforeAdvice>();
-            interceptorMock.Setup(i => i.Before(It.IsAny<MethodInfo>(), It.Is(), It.IsAny<object>()));
+            //var interceptorMock = new Moq.Mock<IMethodBeforeAdvice>();
+            //interceptorMock.Setup(i => i.Before(It.IsAny<MethodInfo>(), It.IsAny<object[]>(), It.IsAny<object>()));
         }
     }
 
