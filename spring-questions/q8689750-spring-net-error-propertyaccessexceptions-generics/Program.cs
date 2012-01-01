@@ -34,11 +34,8 @@ namespace q8689750
         public void ConstructFromCode()
         {
             var drive = new Drive();
-            var genImp = new GenericImplementation();
-            genImp.DriveImplementation = drive;
-
-            var genUser = new GenericUser();
-            genUser.GenericImplementation = genImp;
+            var genImp = new GenericImplementation {DriveImplementation = drive};
+            var genUser = new GenericUser {GenericImplementation = genImp};
         }
     }
 
