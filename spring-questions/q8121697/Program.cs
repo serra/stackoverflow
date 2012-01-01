@@ -51,7 +51,7 @@ namespace q8121697
         public void Main()
         {
             //var interceptorMock = new Moq.Mock<IMethodBeforeAdvice>();
-            //interceptorMock.Setup(i => i.Before(Moq.It.IsAny<MethodInfo>(), Moq.It.IsAny<object[]>(), Moq.It.IsAny<object>()));
+            //interceptorMock.Setup(i => i.Before(It.IsAny<MethodInfo>(), It.IsAny<object[]>(), It.IsAny<object>()));
         }
     }
 
