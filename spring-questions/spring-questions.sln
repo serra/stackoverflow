@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8433676", "q8433676\q84336
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8492994-exception-from-methodinvokingfactoryobject", "q8492994-exception-from-methodinvokingfactoryobject\q8492994-exception-from-methodinvokingfactoryobject.csproj", "{FFDC7158-927F-446C-84F2-0A1EC0581D29}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8689750-spring-net-error-propertyaccessexceptions-generics", "q8689750-spring-net-error-propertyaccessexceptions-generics\q8689750-spring-net-error-propertyaccessexceptions-generics.csproj", "{55B0EC39-F32D-4559-A95B-2E50D0B4CA78}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -79,6 +81,10 @@ Global
 		{FFDC7158-927F-446C-84F2-0A1EC0581D29}.Debug|x86.Build.0 = Debug|x86
 		{FFDC7158-927F-446C-84F2-0A1EC0581D29}.Release|x86.ActiveCfg = Release|x86
 		{FFDC7158-927F-446C-84F2-0A1EC0581D29}.Release|x86.Build.0 = Release|x86
+		{55B0EC39-F32D-4559-A95B-2E50D0B4CA78}.Debug|x86.ActiveCfg = Debug|x86
+		{55B0EC39-F32D-4559-A95B-2E50D0B4CA78}.Debug|x86.Build.0 = Debug|x86
+		{55B0EC39-F32D-4559-A95B-2E50D0B4CA78}.Release|x86.ActiveCfg = Release|x86
+		{55B0EC39-F32D-4559-A95B-2E50D0B4CA78}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
