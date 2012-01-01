@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8256126", "q8256126\q82561
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8433676", "q8433676\q8433676.csproj", "{CC879343-56C6-4283-A93A-DEF298FF0484}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8492994-exception-from-methodinvokingfactoryobject", "q8492994-exception-from-methodinvokingfactoryobject\q8492994-exception-from-methodinvokingfactoryobject.csproj", "{FFDC7158-927F-446C-84F2-0A1EC0581D29}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -73,6 +75,10 @@ Global
 		{CC879343-56C6-4283-A93A-DEF298FF0484}.Debug|x86.Build.0 = Debug|x86
 		{CC879343-56C6-4283-A93A-DEF298FF0484}.Release|x86.ActiveCfg = Release|x86
 		{CC879343-56C6-4283-A93A-DEF298FF0484}.Release|x86.Build.0 = Release|x86
+		{FFDC7158-927F-446C-84F2-0A1EC0581D29}.Debug|x86.ActiveCfg = Debug|x86
+		{FFDC7158-927F-446C-84F2-0A1EC0581D29}.Debug|x86.Build.0 = Debug|x86
+		{FFDC7158-927F-446C-84F2-0A1EC0581D29}.Release|x86.ActiveCfg = Release|x86
+		{FFDC7158-927F-446C-84F2-0A1EC0581D29}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
