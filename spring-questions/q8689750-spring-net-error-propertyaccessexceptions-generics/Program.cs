@@ -19,7 +19,7 @@ namespace q8689750
         public void Main()
         {
             var ctx = new XmlApplicationContext("objects.xml");
-            var drive = ctx.GetObject("Drive");
+            var drive = ctx.GetObject("driver");
             Console.WriteLine(drive);
 
             var genImp = ctx.GetObject("GenericImplementation");
@@ -33,7 +33,7 @@ namespace q8689750
         [Test]
         public void ConstructFromCode()
         {
-            var drive = new Drive();
+            var drive = new Driver();
             var genImp = new GenericImplementation {DriveImplementation = drive};
             var genUser = new GenericUser {GenericImplementation = genImp};
         }
@@ -56,14 +56,14 @@ namespace q8689750
     {
     }
 
-    public interface IDrive<T>
+    public interface IDrive<in T>
     {
         void Drive(T vehicle);
     }
 
-    public class Drive : IDrive<ICar>
+    public class Driver : IDrive<ICar>
     {
-        void IDrive<ICar>.Drive(ICar car)
+        public void Drive(ICar car)
         {
         }
     }

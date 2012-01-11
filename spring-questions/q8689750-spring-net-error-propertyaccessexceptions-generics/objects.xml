@@ -3,9 +3,9 @@
          xmlns:aop="http://www.springframework.net/aop" xmlns:db="http://www.springframework.net/db"
          xmlns:r="http://www.springframework.net/remoting">
 
-  <object id="Drive" type="q8689750.Drive, q8689750"/>
+  <object id="driver" type="q8689750.Driver, q8689750"/>
   <object id="GenericImplementation" type="q8689750.GenericImplementation, q8689750">
-    <property name="DriveImplementation" ref="Drive"/>
+    <property name="DriveImplementation" ref="driver"/>
   </object>
 
   <object id="GenUser" type="q8689750.GenericUser, q8689750">
