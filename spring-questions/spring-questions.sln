@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8689750-spring-net-error-p
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8805267-how-to-reload-context", "q8805267-how-to-reload-context\q8805267-how-to-reload-context.csproj", "{0545F6D2-480A-4563-89FC-60CB517CC81B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8932396_inheritance_based_proxies", "q8932396_inheritance_based_proxies\q8932396_inheritance_based_proxies.csproj", "{E9B107EB-1732-46A2-893E-562DC63FF49E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -91,6 +93,10 @@ Global
 		{0545F6D2-480A-4563-89FC-60CB517CC81B}.Debug|x86.Build.0 = Debug|x86
 		{0545F6D2-480A-4563-89FC-60CB517CC81B}.Release|x86.ActiveCfg = Release|x86
 		{0545F6D2-480A-4563-89FC-60CB517CC81B}.Release|x86.Build.0 = Release|x86
+		{E9B107EB-1732-46A2-893E-562DC63FF49E}.Debug|x86.ActiveCfg = Debug|x86
+		{E9B107EB-1732-46A2-893E-562DC63FF49E}.Debug|x86.Build.0 = Debug|x86
+		{E9B107EB-1732-46A2-893E-562DC63FF49E}.Release|x86.ActiveCfg = Release|x86
+		{E9B107EB-1732-46A2-893E-562DC63FF49E}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

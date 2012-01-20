@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<objects xmlns="http://www.springframework.net" xmlns:v='http://www.springframework.net/validation'
+         xmlns:aop="http://www.springframework.net/aop" xmlns:db="http://www.springframework.net/db"
+         xmlns:r="http://www.springframework.net/remoting">
+
+  <object id="MyObject" type="q8932396_inheritance_based_proxies.MyClass, q8932396_inheritance_based_proxies">
+
+  </object>
+
+</objects>
