@@ -1,15 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
 using NUnit.Framework;
 using Spring.Context.Support;
 
-namespace q8433676
+namespace MyNameSpace
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.ReadLine();
+            new Tests().Main();
         }
     }
 
@@ -27,6 +26,8 @@ namespace q8433676
             var o2 = (MyClass)ctx.GetObject("MyObject2");
             Assert.AreEqual(typeof(MySecondClass), o2.TheType);
 
+            var o3 = (MyClass)ctx.GetObject("MyObject3");
+            Assert.AreEqual(typeof(MySecondClass), o3.TheType);
         }
 
         [Test]

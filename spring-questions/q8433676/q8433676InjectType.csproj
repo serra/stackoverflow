@@ -8,8 +8,8 @@
     <ProjectGuid>{CC879343-56C6-4283-A93A-DEF298FF0484}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>q8433676</RootNamespace>
-    <AssemblyName>q8433676</AssemblyName>
+    <RootNamespace>MyNameSpace</RootNamespace>
+    <AssemblyName>MyAssembly</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -37,7 +37,7 @@
     <ApplicationIcon>so.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>q8433676.Program</StartupObject>
+    <StartupObject>MyNameSpace.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Common.Logging">
