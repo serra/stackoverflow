@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<objects xmlns="http://www.springframework.net" xmlns:v='http://www.springframework.net/validation'
+         xmlns:aop="http://www.springframework.net/aop" xmlns:db="http://www.springframework.net/db"
+         xmlns:r="http://www.springframework.net/remoting">
+
+  <object id="driver" type="q8689750.Driver, q8689750"/>
+  <object id="GenericImplementation" type="q8689750.GenericImplementation, q8689750">
+    <property name="DriveImplementation" ref="driver"/>
+  </object>
+
+  <object id="GenUser" type="q8689750.GenericUser, q8689750">
+    <property name="GenericImplementation" ref="GenericImplementation"/>
+  </object>
+</objects>

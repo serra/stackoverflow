@@ -25,6 +25,7 @@ namespace q8029460
         public void Main()
         {
             var ctx = ContextRegistry.GetContext();
+            Console.WriteLine("Context is of type: {0}", ctx.GetType());
             var ohI = (MyClass)ctx["mySomeClass"];
             ohI.WantToLogThisCall();
             Console.WriteLine(ohI);

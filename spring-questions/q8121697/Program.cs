@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Reflection;
 using System.Xml.Serialization;
 using NUnit.Framework;
 using Spring.Aop;
 using Spring.Aop.Framework;
-using Spring.Context.Support;
 
 namespace q8121697
 {
