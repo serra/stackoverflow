@@ -16,7 +16,7 @@ namespace q8981997_membership_provider_in_unit_test
     }
 
     /// <summary>
-    /// Example demonstrating unit testing using autowire by name.
+    /// Example demonstrating unit testing injectieng dependencies by name into protecte fields.
     /// </summary>
     /// <remarks>
     /// Make sure you use private fields, not properties and that
@@ -25,11 +25,11 @@ namespace q8981997_membership_provider_in_unit_test
     /// This will _not_ inject into properties.
     /// </remarks>
     [TestFixture]
-    public class AutoWireByNameTests : AbstractDependencyInjectionSpringContextTests
+    public class InjectIntoProtectedFieldsByNameTests : AbstractDependencyInjectionSpringContextTests
     {
         protected IMyInterface MyObject;
 
-        public AutoWireByNameTests()
+        public InjectIntoProtectedFieldsByNameTests()
         {
             PopulateProtectedVariables = true;
         }
