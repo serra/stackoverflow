@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using Spring.Web.Mvc;
 
-namespace q9114762_aop_on_mvc_controllers
+namespace MyApp
 {
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
     // visit http://go.microsoft.com/?LinkId=9394801

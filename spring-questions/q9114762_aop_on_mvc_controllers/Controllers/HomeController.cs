@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 using System.Web.Mvc;
-using Spring.Context.Support;
+using MyApp.Controllers;
 
-namespace q9114762_aop_on_mvc_controllers.Controllers
+namespace MyApp.Controllers
 {
     public class HomeController : Controller, IPostMan
     {

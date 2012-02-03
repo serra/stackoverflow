@@ -2,7 +2,7 @@
 using System.Reflection;
 using Spring.Aop;
 
-namespace q9114762_aop_on_mvc_controllers.Controllers
+namespace MyApp.Controllers
 {
     public class SetMethodInfoAsMessageAdvice : IMethodBeforeAdvice
     {

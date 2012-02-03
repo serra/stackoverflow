@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Web.Mvc;
+using MyApp.Controllers;
 using NUnit.Framework;
-using q9114762_aop_on_mvc_controllers;
-using q9114762_aop_on_mvc_controllers.Controllers;
+using MyApp;
+using MyApp.Controllers;
 
 namespace q9114762_aop_on_mvc_controllers.Tests.Controllers
 {

@@ -4,16 +4,15 @@
 
   <!-- Controllers -->
   
-  <object 
-          type="q9114762_aop_on_mvc_controllers.Controllers.HomeController, q9114762_aop_on_mvc_controllers" 
+  <object type="MyApp.Controllers.HomeController, MyApp" 
           singleton="false" />
 
   <!-- Aop -->
 
   <object id="myInterceptor" type="Spring.Aop.Support.AttributeMatchMethodPointcutAdvisor, Spring.Aop">
-    <property name="Attribute" value="q9114762_aop_on_mvc_controllers.Controllers.SetMethodInfoAsMessageAttribute, q9114762_aop_on_mvc_controllers" />
+    <property name="Attribute" value="MyApp.Controllers.SetMethodInfoAsMessageAttribute, MyApp" />
     <property name="Advice">
-      <object type="q9114762_aop_on_mvc_controllers.Controllers.SetMethodInfoAsMessageAdvice, q9114762_aop_on_mvc_controllers" />
+      <object type="MyApp.Controllers.SetMethodInfoAsMessageAdvice, MyApp" />
     </property>
   </object>
  
@@ -29,6 +28,5 @@
       </list>
     </property>
   </object>
-  
   
 </objects>
