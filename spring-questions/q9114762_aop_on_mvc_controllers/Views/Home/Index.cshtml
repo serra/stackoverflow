@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>@ViewBag.Message</h2>
+<p>
+    This project demonstrates the use of <code>Spring.Aop</code> on mvc controllers.
+</p>    
+<p>
+    List of interception messages:
+    
+    <br />
+    
+    <code>
+    <ol>
+        @foreach (string msg in ViewBag.MessageDetails)
+        {
+            <li>@msg</li>
+        }
+    </ol>
+    </code>
+</p>

@@ -73,6 +73,12 @@
     <Reference Include="Spring.Testing.NUnit">
       <HintPath>..\packages\Spring.Testing.NUnit.1.3.2\lib\net40\Spring.Testing.NUnit.dll</HintPath>
     </Reference>
+    <Reference Include="Spring.Web">
+      <HintPath>..\packages\Spring.Web.1.3.2\lib\net40\Spring.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Web.Mvc3">
+      <HintPath>..\packages\Spring.Web.Mvc3.1.3.2\lib\net40\Spring.Web.Mvc3.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
