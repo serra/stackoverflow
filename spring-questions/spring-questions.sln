@@ -30,6 +30,7 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8805267-how-to-reload-context", "q8805267-how-to-reload-context\q8805267-how-to-reload-context.csproj", "{0545F6D2-480A-4563-89FC-60CB517CC81B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8892913-combine-paths-in-xml-config", "q8892913-combine-paths-in-xml-config\q8892913-combine-paths-in-xml-config.csproj", "{F3153E56-D8C7-413E-AB67-06A96FFAD813}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8932396_inheritance_based_proxies", "q8932396_inheritance_based_proxies\q8932396_inheritance_based_proxies.csproj", "{E9B107EB-1732-46A2-893E-562DC63FF49E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8981997_membership_provider_in_unit_test", "q8981997_membership_provider_in_unit_test\q8981997_membership_provider_in_unit_test.csproj", "{895B3279-EE37-4276-9352-235EF8830A2D}"
@@ -37,6 +38,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q9114762_aop_on_mvc_controllers", "q9114762_aop_on_mvc_controllers\q9114762_aop_on_mvc_controllers.csproj", "{91308FD0-BE81-48A2-B04A-25560ED1C11E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q9114762_aop_on_mvc_controllers.Tests", "q9114762_aop_on_mvc_controllers.Tests\q9114762_aop_on_mvc_controllers.Tests.csproj", "{0E344495-FC3E-41FA-A081-EBB1BF73F0DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q9235417-spring-net-and-protobuf-object-instantiation", "q9235417-spring-net-and-protobuf-object-instantiation\q9235417-spring-net-and-protobuf-object-instantiation.csproj", "{8594DB28-5086-4231-92BB-97ABECBC737A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -188,8 +191,12 @@ Global
 		{0545F6D2-480A-4563-89FC-60CB517CC81B}.Release|Mixed Platforms.Build.0 = Release|x86
 		{0545F6D2-480A-4563-89FC-60CB517CC81B}.Release|x86.ActiveCfg = Release|x86
 		{0545F6D2-480A-4563-89FC-60CB517CC81B}.Release|x86.Build.0 = Release|x86
+		{F3153E56-D8C7-413E-AB67-06A96FFAD813}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{F3153E56-D8C7-413E-AB67-06A96FFAD813}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
 		{F3153E56-D8C7-413E-AB67-06A96FFAD813}.Debug|x86.ActiveCfg = Debug|x86
 		{F3153E56-D8C7-413E-AB67-06A96FFAD813}.Debug|x86.Build.0 = Debug|x86
+		{F3153E56-D8C7-413E-AB67-06A96FFAD813}.Release|Any CPU.ActiveCfg = Release|x86
+		{F3153E56-D8C7-413E-AB67-06A96FFAD813}.Release|Mixed Platforms.ActiveCfg = Release|x86
 		{F3153E56-D8C7-413E-AB67-06A96FFAD813}.Release|x86.ActiveCfg = Release|x86
 		{F3153E56-D8C7-413E-AB67-06A96FFAD813}.Release|x86.Build.0 = Release|x86
 		{E9B107EB-1732-46A2-893E-562DC63FF49E}.Debug|Any CPU.ActiveCfg = Debug|x86
@@ -232,6 +239,16 @@ Global
 		{0E344495-FC3E-41FA-A081-EBB1BF73F0DB}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{0E344495-FC3E-41FA-A081-EBB1BF73F0DB}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{0E344495-FC3E-41FA-A081-EBB1BF73F0DB}.Release|x86.ActiveCfg = Release|Any CPU
+		{8594DB28-5086-4231-92BB-97ABECBC737A}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{8594DB28-5086-4231-92BB-97ABECBC737A}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{8594DB28-5086-4231-92BB-97ABECBC737A}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{8594DB28-5086-4231-92BB-97ABECBC737A}.Debug|x86.ActiveCfg = Debug|x86
+		{8594DB28-5086-4231-92BB-97ABECBC737A}.Debug|x86.Build.0 = Debug|x86
+		{8594DB28-5086-4231-92BB-97ABECBC737A}.Release|Any CPU.ActiveCfg = Release|x86
+		{8594DB28-5086-4231-92BB-97ABECBC737A}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{8594DB28-5086-4231-92BB-97ABECBC737A}.Release|Mixed Platforms.Build.0 = Release|x86
+		{8594DB28-5086-4231-92BB-97ABECBC737A}.Release|x86.ActiveCfg = Release|x86
+		{8594DB28-5086-4231-92BB-97ABECBC737A}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
