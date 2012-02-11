@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<objects xmlns="http://www.springframework.net" xmlns:v='http://www.springframework.net/validation'
+         xmlns:aop="http://www.springframework.net/aop" xmlns:db="http://www.springframework.net/db"
+         xmlns:r="http://www.springframework.net/remoting">
+
+  <object id="MyObject" type="q8892913.MyClass, q8892913">
+    <property name="Path" expression="T(System.IO.Path).Combine(@(MyConfig).Path, 'Temp')" />
+  </object>
+
+  <object id="MyConfig" type="q8892913.MyClass, q8892913">
+    <property name="Path" value="c:\dev" />
+  </object>
+
+</objects>
