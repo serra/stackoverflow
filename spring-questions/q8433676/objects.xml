@@ -1,14 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<objects xmlns="http://www.springframework.net" >
+<objects xmlns="http://www.springframework.net"  default-lazy-init="true">
 
-  <object id="MyObject" type="q8433676.MyClass, q8433676">
-    <constructor-arg type="System.Type, mscorlib" expression="T(q8433676.MySecondClass, q8433676)" />
+  <object id="MyObject" type="MyNameSpace.MyClass, MyAssembly">
+    <!-- use an expression to specify type -->
+    <constructor-arg type="System.Type, mscorlib" expression="T(MyNameSpace.MySecondClass)" />
   </object>
 
-  <object id="MyObject2" type="q8433676.MyClass, q8433676">
+  <object id="MyObject2" type="MyNameSpace.MyClass, MyAssembly">
+    <!-- get the type of a nother object in the container -->
     <constructor-arg type="System.Type, mscorlib" expression="@(MySecondObject).GetType()" />
   </object>
 
-  <object id="MySecondObject" type="q8433676.MySecondClass, q8433676" />
-  
+  <object id="MySecondObject" type="MyNameSpace.MySecondClass, MyAssembly" />
+
+  <object id="MyObject3" type="MyNameSpace.MyClass, MyAssembly">
+    <!-- specify the type directly -->
+    <constructor-arg type="System.Type, mscorlib" value="MyNameSpace.MySecondClass, MyAssembly" />
+  </object>
+
 </objects>

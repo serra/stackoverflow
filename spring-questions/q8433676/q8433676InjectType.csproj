@@ -8,8 +8,8 @@
     <ProjectGuid>{CC879343-56C6-4283-A93A-DEF298FF0484}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>q8433676</RootNamespace>
-    <AssemblyName>q8433676</AssemblyName>
+    <RootNamespace>MyNameSpace</RootNamespace>
+    <AssemblyName>MyAssembly</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -37,7 +37,7 @@
     <ApplicationIcon>so.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>q8433676.Program</StartupObject>
+    <StartupObject>MyNameSpace.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Common.Logging">
@@ -72,6 +72,12 @@
     </Reference>
     <Reference Include="Spring.Testing.NUnit">
       <HintPath>..\packages\Spring.Testing.NUnit.1.3.2\lib\net40\Spring.Testing.NUnit.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Web">
+      <HintPath>..\packages\Spring.Web.1.3.2\lib\net40\Spring.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Web.Mvc3">
+      <HintPath>..\packages\Spring.Web.Mvc3.1.3.2\lib\net40\Spring.Web.Mvc3.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
