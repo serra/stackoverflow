@@ -3,18 +3,14 @@
          xmlns:aop="http://www.springframework.net/aop" xmlns:db="http://www.springframework.net/db"
          xmlns:r="http://www.springframework.net/remoting">
 
-  <!--<object id="MyObject" type="q9292066_null_object_reference.MyClass, q9292066_null_object_reference">
-    <constructor-arg name="ref1" >
-      <null />
-    </constructor-arg>
+  <object id="MyObject" type="q9292066_null_object_reference.MyClass, q9292066_null_object_reference">
+    <constructor-arg name="ref1" ref="ref1" />
   </object>
 
-  <object id="ref1" type="q9292066_null_object_reference.MyClass, q9292066_null_object_reference" />-->
-
-  <!--<import resource ="\\SERRA-01\shared\objects.xml"/>-->
-  
-  <import resource ="file:////SERRA-01/shared/objects.xml"/>
-
-  <!--<import resource ="file://c:/temp/shared/objects.xml"/>-->
+  <object id="MySecondObject" type="q9292066_null_object_reference.MyClass, q9292066_null_object_reference">
+    <constructor-arg name="ref1" >
+      <object type="q9292066_null_object_reference.MyOtherClass, q9292066_null_object_reference" />
+    </constructor-arg>
+  </object>
   
 </objects>

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using NUnit.Framework;
 using Spring.Context.Support;
+using Spring.Objects.Factory;
 
 namespace q9292066_null_object_reference
 {
@@ -17,22 +18,49 @@ namespace q9292066_null_object_reference
     public class DictionaryTests
     {
         [Test]
+        [ExpectedException(typeof(FactoryObjectNotInitializedException))]
         public void Main()
         {
-            var ctx = ContextRegistry.GetContext(); //new XmlApplicationContext("objects.xml");
-            var o = ctx.GetObject("MyObject");
-            Console.WriteLine(o);
+            var ctx = new XmlApplicationContext("objects.xml", "objects2.xml");
+
+            var o = (MyClass)ctx.GetObject("MyObject");
+            Assert.IsNull(o.Prop);
+
+            var o2 = (MyClass)ctx.GetObject("MySecondObject");
+            Assert.IsNotNull(o2.Prop);
+
         }
     }
 
     public class MyClass
     {
-        public MyClass()
+        public MyOtherClass Prop { get; set; }
+
+        public MyClass(MyOtherClass ref1)
         {
         }
+    }
 
-        public MyClass(MyClass ref1)
+    public class MyOtherClass
+    {
+    }
+
+
+    public class NullFactoryObject : IFactoryObject
+    {
+        public object GetObject()
         {
+            return null;
+        }
+
+        public Type ObjectType
+        {
+            get { return typeof(MyOtherClass); }
+        }
+
+        public bool IsSingleton
+        {
+            get { return true; }
         }
     }
 
