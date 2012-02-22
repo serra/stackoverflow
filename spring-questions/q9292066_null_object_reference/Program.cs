@@ -15,13 +15,13 @@ namespace q9292066_null_object_reference
     }
 
     [TestFixture]
-    public class DictionaryTests
+    public class Tests
     {
         [Test]
         [ExpectedException(typeof(FactoryObjectNotInitializedException))]
-        public void Main()
+        public void UsingNullFactoryObjectIsNotAnOption()
         {
-            var ctx = new XmlApplicationContext("objects.xml", "objects2.xml");
+            var ctx = new XmlApplicationContext("objects.xml", "objects-ref1-as-nullfactoryobject.xml");
 
             var o = (MyClass)ctx.GetObject("MyObject");
             Assert.IsNull(o.Prop);
@@ -30,21 +30,45 @@ namespace q9292066_null_object_reference
             Assert.IsNotNull(o2.Prop);
 
         }
+
+        [Test]
+        public void UsingNullFactoryObjectIsAnOptionIfWeMassageContextToAllowForNullReferences()
+        {
+            var ctx = new XmlApplicationContext("objects.xml", "objects-ref1-as-nullobject.xml");
+
+            var o2 = (MyClass)ctx.GetObject("MySecondObject");
+            Assert.IsNotNull(o2.Prop);
+
+            var o = (MyClass)ctx.GetObject("MyObject");
+            Assert.IsNotNull(o.Prop);
+            Assert.IsInstanceOf<IMyOtherInterface>(o.Prop);
+            Assert.IsInstanceOf<MyOtherClassNullObject>(o.Prop);
+
+        }
     }
 
     public class MyClass
     {
-        public MyOtherClass Prop { get; set; }
+        public IMyOtherInterface Prop { get; set; }
 
-        public MyClass(MyOtherClass ref1)
+        public MyClass(IMyOtherInterface ref1)
         {
+            Prop = ref1;
         }
     }
 
-    public class MyOtherClass
+
+    public interface IMyOtherInterface
     {
     }
 
+    public class MyOtherClass : IMyOtherInterface
+    {
+    }
+
+    public class MyOtherClassNullObject : IMyOtherInterface
+    {
+    }
 
     public class NullFactoryObject : IFactoryObject
     {
