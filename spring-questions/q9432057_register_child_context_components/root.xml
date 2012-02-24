@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<objects xmlns="http://www.springframework.net" xmlns:v='http://www.springframework.net/validation'
+         xmlns:aop="http://www.springframework.net/aop" xmlns:db="http://www.springframework.net/db"
+         xmlns:r="http://www.springframework.net/remoting">
+
+  <object name="parent" abstract="true" >
+    
+  </object>
+  
+  <object id="MyObject" 
+          type="q9432057_register_child_context_components.MyClass, q9432057_register_child_context_components"
+          init-method="Register" >
+    <property name="Name" value="from root context" />
+    
+  </object>
+
+  <object id="repo" 
+          type="q9432057_register_child_context_components.ComponentRepository, q9432057_register_child_context_components"
+          singleton="true"/>
+
+  <object type="q9432057_register_child_context_components.RegistrationHelper, q9432057_register_child_context_components">
+    <constructor-arg ref="repo" />
+  </object>
+  
+</objects>
