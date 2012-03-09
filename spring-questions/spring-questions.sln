@@ -53,6 +53,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C80959
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q9432057_register_child_context_components", "q9432057_register_child_context_components\q9432057_register_child_context_components.csproj", "{D3899635-3546-4079-B48B-0D4FA55FE373}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q7149110_multiple_id_specs", "q7149110_multiple_id_specs\q7149110_multiple_id_specs.csproj", "{CD7F06C1-27CC-4E2A-8304-CEC18BB810E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -291,6 +293,16 @@ Global
 		{D3899635-3546-4079-B48B-0D4FA55FE373}.Release|Mixed Platforms.Build.0 = Release|x86
 		{D3899635-3546-4079-B48B-0D4FA55FE373}.Release|x86.ActiveCfg = Release|x86
 		{D3899635-3546-4079-B48B-0D4FA55FE373}.Release|x86.Build.0 = Release|x86
+		{CD7F06C1-27CC-4E2A-8304-CEC18BB810E3}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{CD7F06C1-27CC-4E2A-8304-CEC18BB810E3}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{CD7F06C1-27CC-4E2A-8304-CEC18BB810E3}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{CD7F06C1-27CC-4E2A-8304-CEC18BB810E3}.Debug|x86.ActiveCfg = Debug|x86
+		{CD7F06C1-27CC-4E2A-8304-CEC18BB810E3}.Debug|x86.Build.0 = Debug|x86
+		{CD7F06C1-27CC-4E2A-8304-CEC18BB810E3}.Release|Any CPU.ActiveCfg = Release|x86
+		{CD7F06C1-27CC-4E2A-8304-CEC18BB810E3}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{CD7F06C1-27CC-4E2A-8304-CEC18BB810E3}.Release|Mixed Platforms.Build.0 = Release|x86
+		{CD7F06C1-27CC-4E2A-8304-CEC18BB810E3}.Release|x86.ActiveCfg = Release|x86
+		{CD7F06C1-27CC-4E2A-8304-CEC18BB810E3}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
