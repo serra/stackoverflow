@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<objects xmlns="http://www.springframework.net" xmlns:v='http://www.springframework.net/validation'
+         xmlns:aop="http://www.springframework.net/aop" xmlns:db="http://www.springframework.net/db"
+         xmlns:r="http://www.springframework.net/remoting">
+
+    <object id="MyObject" type="XmlConfig.MyClass, XmlConfig">
+      <property name="ContextMenuModel" ref="dic0" />
+    </object>
+
+    <object id="list1" type="System.Collections.Generic.List&lt;string>">
+      <constructor-arg>
+        <list element-type="string">
+          <value>abc</value> 
+          <value>def</value> 
+        </list>
+      </constructor-arg>
+    </object>
+  
+    <object id="list2" type="System.Collections.Generic.List&lt;string>">
+      <constructor-arg>
+        <list element-type="string">
+          <value>abc</value> 
+          <value>def</value> 
+        </list>
+      </constructor-arg>
+    </object>
+
+    <object id="dic1" type="System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string>>">
+      <constructor-arg>
+        <dictionary key-type="string" value-type="System.Collections.Generic.List&lt;string>">
+          <entry key="keyToList1" value-ref="list1" />
+          <entry key="keyToList2" value-ref="list2" /> 
+        </dictionary>
+      </constructor-arg>
+    </object>
+
+    <object id="dic0" type="System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string>>>">
+      <constructor-arg>
+        <dictionary key-type="string" value-type="System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string>>">
+          <entry key="keyToDic1 " value-ref="dic1" />
+        </dictionary>
+      </constructor-arg>  
+    </object>
+  
+</objects>
