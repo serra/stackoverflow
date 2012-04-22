@@ -17,7 +17,7 @@ namespace q8892913
     [TestFixture]
     public class DictionaryTests
     {
-        [Test]
+        [Test, Ignore]
         public void Main()
         {
             var ctx = new XmlApplicationContext("objects.xml");
