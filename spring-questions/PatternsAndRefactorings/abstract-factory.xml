@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<objects xmlns="http://www.springframework.net" xmlns:v='http://www.springframework.net/validation'
+         xmlns:aop="http://www.springframework.net/aop" xmlns:db="http://www.springframework.net/db"
+         xmlns:r="http://www.springframework.net/remoting">
+
+  <object id="consumer" 
+          type="PatternsAndRefactorings.Consumer, PatternsAndRefactorings"
+          autowire="constructor" />
+
+  <!--<object id="defaultFactory"
+          type="PatternsAndRefactorings.StateAlgorithmFactory, PatternsAndRefactorings" />-->
+
+  <object id="lookupFactory"
+          type="PatternsAndRefactorings.LookupStateAlgorithmFactory, PatternsAndRefactorings">
+    <constructor-arg name="defaultObjectName" value="echo" />
+    <constructor-arg>
+      <dictionary key-type="string" value-type="string">
+        <entry key="default" value="echo"/>
+        <entry key="Alaska" value="reverseEcho"/>
+        <entry key="Wisconsin" value="reverseEcho"/>
+      </dictionary>
+    </constructor-arg>
+  </object>
+
+  <object id="echo" type="PatternsAndRefactorings.EchoingStateAlgorithm, PatternsAndRefactorings" />
+  <object id="reverseEcho" type="PatternsAndRefactorings.ReverseEchoingStateAlgorithm, PatternsAndRefactorings" />
+  
+</objects>
