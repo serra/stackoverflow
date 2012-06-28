@@ -10,14 +10,26 @@
   <!--<object id="defaultFactory"
           type="PatternsAndRefactorings.StateAlgorithmFactory, PatternsAndRefactorings" />-->
 
-  <object id="lookupFactory"
-          type="PatternsAndRefactorings.LookupStateAlgorithmFactory, PatternsAndRefactorings">
+  <!--<object id="springLookupFactory"
+          type="PatternsAndRefactorings.ApplicationContextAwareLookupStateAlgorithmFactory, PatternsAndRefactorings">
     <constructor-arg name="defaultObjectName" value="echo" />
     <constructor-arg>
       <dictionary key-type="string" value-type="string">
         <entry key="default" value="echo"/>
         <entry key="Alaska" value="reverseEcho"/>
         <entry key="Wisconsin" value="reverseEcho"/>
+      </dictionary>
+    </constructor-arg>
+  </object>-->
+  
+  <object id="lookupFactory"
+          type="PatternsAndRefactorings.LookupStateAlgorithmFactory, PatternsAndRefactorings">
+    <constructor-arg ref="echo" />
+    <constructor-arg>
+      <dictionary key-type="string" value-type="PatternsAndRefactorings.IStateAlgorithm, PatternsAndRefactorings">
+        <entry key="default" value-ref="echo"/>
+        <entry key="Alaska" value-ref="reverseEcho"/>
+        <entry key="Wisconsin" value-ref="reverseEcho"/>
       </dictionary>
     </constructor-arg>
   </object>

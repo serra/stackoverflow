@@ -55,13 +55,35 @@ namespace PatternsAndRefactorings
         }
     }
 
-    public class LookupStateAlgorithmFactory : IStateAlgorithmFactory, IApplicationContextAware
+    public class LookupStateAlgorithmFactory : IStateAlgorithmFactory
+    {
+        private readonly IDictionary<string, IStateAlgorithm> _stateToAlgorithmMap;
+        private readonly IStateAlgorithm _defaultAlgorithm;
+
+        public LookupStateAlgorithmFactory(IDictionary<string, IStateAlgorithm> stateToAlgorithmMap, 
+                                            IStateAlgorithm defaultAlgorithm)
+        {
+            _stateToAlgorithmMap = stateToAlgorithmMap;
+            _defaultAlgorithm = defaultAlgorithm;
+        }
+
+        public IStateAlgorithm Create(string state)
+        {
+            IStateAlgorithm alg;
+            if (!_stateToAlgorithmMap.TryGetValue(state, out alg))
+                alg = _defaultAlgorithm;
+
+            return alg;
+        }
+    }
+
+    public class ApplicationContextAwareLookupStateAlgorithmFactory : IStateAlgorithmFactory, IApplicationContextAware
     {
         private readonly IDictionary<string, string> _stateToAlgorithmMap;
         private readonly string _defaultObjectName;
         private IApplicationContext _ctxt;
 
-        public LookupStateAlgorithmFactory(IDictionary<string,string> stateToAlgorithmMap, string defaultObjectName)
+        public ApplicationContextAwareLookupStateAlgorithmFactory(IDictionary<string,string> stateToAlgorithmMap, string defaultObjectName)
         {
             _stateToAlgorithmMap = stateToAlgorithmMap;
             _defaultObjectName = defaultObjectName;
