@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using AopAlliance.Intercept;
 using NUnit.Framework;
 using Spring.Aop.Framework;
-using Spring.Context.Support;
 
 namespace Aop
 {
@@ -35,7 +33,7 @@ namespace Aop
     {
         public void HandleExceptionFromPlugin(Exception ex)
         {
-            Console.WriteLine("Handled ", ex.Message);
+            Console.WriteLine("Handling exception: {0}", ex.Message);
         }
     }
 
