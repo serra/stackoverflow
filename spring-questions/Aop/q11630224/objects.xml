@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<objects xmlns="http://www.springframework.net" xmlns:v='http://www.springframework.net/validation'
+         xmlns:aop="http://www.springframework.net/aop" xmlns:db="http://www.springframework.net/db"
+         xmlns:r="http://www.springframework.net/remoting">
+
+  <object id="report1" type="Aop.q11630224.Report" >
+
+  </object>
+
+  <object id="report2" type="Aop.q11630224.Report" >
+
+  </object>
+
+  <object id="ProxyCreator" type="Spring.Aop.Framework.AutoProxy.ObjectNameAutoProxyCreator, Spring.Aop">
+    <property name="ObjectNames">
+      <list>
+        <value>report1</value>
+      </list>
+    </property>
+    <property name="InterceptorNames">
+      <list>
+        <value>usageTrackingInterceptor</value>
+      </list>
+    </property>
+  </object>
+  
+  <object id="usageTrackingInterceptor" type="Aop.q11630224.UsageTrackingInterceptor, Aop">
+    
+  </object>
+  
+  
+</objects>
