@@ -77,8 +77,13 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StringInjection\Person.cs" />
+    <Compile Include="StringInjection\StringInjection.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="StringInjection\objects.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="objects.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
