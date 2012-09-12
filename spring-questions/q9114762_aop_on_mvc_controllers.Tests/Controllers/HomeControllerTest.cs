@@ -6,7 +6,6 @@ using System.Web.Mvc;
 using MyApp.Controllers;
 using NUnit.Framework;
 using MyApp;
-using MyApp.Controllers;
 
 namespace q9114762_aop_on_mvc_controllers.Tests.Controllers
 {
