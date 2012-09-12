@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spring-questions", "spring-questions\spring-questions.csproj", "{1C865FCF-EA8F-47C4-BA67-CDCA3C0A9E9B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q7370823-spring-net-inject-dictionary-order-question", "q7370823-spring-net-inject-dictionary-order-question\q7370823-spring-net-inject-dictionary-order-question.csproj", "{66EDCA90-0F4F-4A5E-8840-72130782B586}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q7991262-accessing-configurationmanager", "q7991262-accessing-configurationmanager\q7991262-accessing-configurationmanager.csproj", "{2BF95BBC-087C-47E2-A177-4E5F299118BF}"
@@ -76,16 +74,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1C865FCF-EA8F-47C4-BA67-CDCA3C0A9E9B}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{1C865FCF-EA8F-47C4-BA67-CDCA3C0A9E9B}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{1C865FCF-EA8F-47C4-BA67-CDCA3C0A9E9B}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{1C865FCF-EA8F-47C4-BA67-CDCA3C0A9E9B}.Debug|x86.ActiveCfg = Debug|x86
-		{1C865FCF-EA8F-47C4-BA67-CDCA3C0A9E9B}.Debug|x86.Build.0 = Debug|x86
-		{1C865FCF-EA8F-47C4-BA67-CDCA3C0A9E9B}.Release|Any CPU.ActiveCfg = Release|x86
-		{1C865FCF-EA8F-47C4-BA67-CDCA3C0A9E9B}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{1C865FCF-EA8F-47C4-BA67-CDCA3C0A9E9B}.Release|Mixed Platforms.Build.0 = Release|x86
-		{1C865FCF-EA8F-47C4-BA67-CDCA3C0A9E9B}.Release|x86.ActiveCfg = Release|x86
-		{1C865FCF-EA8F-47C4-BA67-CDCA3C0A9E9B}.Release|x86.Build.0 = Release|x86
 		{66EDCA90-0F4F-4A5E-8840-72130782B586}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{66EDCA90-0F4F-4A5E-8840-72130782B586}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
 		{66EDCA90-0F4F-4A5E-8840-72130782B586}.Debug|Mixed Platforms.Build.0 = Debug|x86
