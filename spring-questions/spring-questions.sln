@@ -29,10 +29,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8932396_inheritance_based_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q8981997_membership_provider_in_unit_test", "q8981997_membership_provider_in_unit_test\q8981997_membership_provider_in_unit_test.csproj", "{895B3279-EE37-4276-9352-235EF8830A2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q9114762_aop_on_mvc_controllers", "q9114762_aop_on_mvc_controllers\q9114762_aop_on_mvc_controllers.csproj", "{91308FD0-BE81-48A2-B04A-25560ED1C11E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q9114762_aop_on_mvc_controllers.Tests", "q9114762_aop_on_mvc_controllers.Tests\q9114762_aop_on_mvc_controllers.Tests.csproj", "{0E344495-FC3E-41FA-A081-EBB1BF73F0DB}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q9235417-spring-net-and-protobuf-object-instantiation", "q9235417-spring-net-and-protobuf-object-instantiation\q9235417-spring-net-and-protobuf-object-instantiation.csproj", "{8594DB28-5086-4231-92BB-97ABECBC737A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "q9257449_springmessage", "q9257449_springmessage\q9257449_springmessage.csproj", "{734F003E-7CB4-4AFF-A988-85B785FAE72C}"
@@ -208,26 +204,6 @@ Global
 		{895B3279-EE37-4276-9352-235EF8830A2D}.Release|Mixed Platforms.Build.0 = Release|x86
 		{895B3279-EE37-4276-9352-235EF8830A2D}.Release|x86.ActiveCfg = Release|x86
 		{895B3279-EE37-4276-9352-235EF8830A2D}.Release|x86.Build.0 = Release|x86
-		{91308FD0-BE81-48A2-B04A-25560ED1C11E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{91308FD0-BE81-48A2-B04A-25560ED1C11E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{91308FD0-BE81-48A2-B04A-25560ED1C11E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{91308FD0-BE81-48A2-B04A-25560ED1C11E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{91308FD0-BE81-48A2-B04A-25560ED1C11E}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{91308FD0-BE81-48A2-B04A-25560ED1C11E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{91308FD0-BE81-48A2-B04A-25560ED1C11E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{91308FD0-BE81-48A2-B04A-25560ED1C11E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{91308FD0-BE81-48A2-B04A-25560ED1C11E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{91308FD0-BE81-48A2-B04A-25560ED1C11E}.Release|x86.ActiveCfg = Release|Any CPU
-		{0E344495-FC3E-41FA-A081-EBB1BF73F0DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0E344495-FC3E-41FA-A081-EBB1BF73F0DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0E344495-FC3E-41FA-A081-EBB1BF73F0DB}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{0E344495-FC3E-41FA-A081-EBB1BF73F0DB}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{0E344495-FC3E-41FA-A081-EBB1BF73F0DB}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{0E344495-FC3E-41FA-A081-EBB1BF73F0DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0E344495-FC3E-41FA-A081-EBB1BF73F0DB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0E344495-FC3E-41FA-A081-EBB1BF73F0DB}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{0E344495-FC3E-41FA-A081-EBB1BF73F0DB}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{0E344495-FC3E-41FA-A081-EBB1BF73F0DB}.Release|x86.ActiveCfg = Release|Any CPU
 		{8594DB28-5086-4231-92BB-97ABECBC737A}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{8594DB28-5086-4231-92BB-97ABECBC737A}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
 		{8594DB28-5086-4231-92BB-97ABECBC737A}.Debug|Mixed Platforms.Build.0 = Debug|x86
