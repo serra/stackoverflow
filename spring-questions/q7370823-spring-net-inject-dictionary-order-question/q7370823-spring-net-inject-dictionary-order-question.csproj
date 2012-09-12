@@ -11,7 +11,8 @@
     <RootNamespace>q7370823_spring_net_inject_dictionary_order_question</RootNamespace>
     <AssemblyName>q7370823-spring-net-inject-dictionary-order-question</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\spring-questions\</SolutionDir>
     <RestorePackages>true</RestorePackages>

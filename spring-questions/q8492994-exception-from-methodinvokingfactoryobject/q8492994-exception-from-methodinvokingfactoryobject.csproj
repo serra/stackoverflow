@@ -11,7 +11,8 @@
     <RootNamespace>q8492994</RootNamespace>
     <AssemblyName>q8492994</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\spring-questions\</SolutionDir>
     <RestorePackages>true</RestorePackages>
