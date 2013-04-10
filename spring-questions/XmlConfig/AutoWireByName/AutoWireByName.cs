@@ -1,7 +1,8 @@
 ﻿using System;
 using NUnit.Framework;
 using Spring.Context.Support;
-using XmlConfig.StringInjection;
+
+// http://stackoverflow.com/questions/15900061/spring-net-autowire-tag-does-not-work/15906027?noredirect=1#comment22674406_15906027
 
 namespace XmlConfig.AutoWireByName
 {
@@ -12,40 +13,25 @@ namespace XmlConfig.AutoWireByName
         public void LetsAutoWireByName()
         {
             var ctx = new XmlApplicationContext("AutoWireByName/objects.xml");
-            Texte texte = null;
-            texte = (Texte)ctx.GetObject("texte");
+            var texte = (Texte)ctx.GetObject("texte");
             texte.Print();
         } 
     }
 
     class Texte
     {
-        private String _t;
-        private Description _desc;
-        public String T
-        {
-            get { return _t; }
-            set { _t = value; }
-        }
-        public Description Desc
-        {
-            get { return _desc; }
-            set { _desc = value; }
-        }
+        public string T { get; set; }
+        public Description Desc { get; set; }
+
         public void Print()
         {
-            Console.WriteLine("text in object: " + _t);
-            Console.WriteLine("text description: " + _desc.D);
+            Console.WriteLine("text in object: " + T);
+            Console.WriteLine("text description: " + Desc.D);
         }
     }
 
     class Description
     {
-        private String _d;
-        public String D
-        {
-            get { return _d; }
-            set { _d = value; }
-        }
+        public string D { get; set; }
     }
 }
