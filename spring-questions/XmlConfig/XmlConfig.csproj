@@ -76,12 +76,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutoWireByName\AutoWireByName.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringInjection\Person.cs" />
     <Compile Include="StringInjection\StringInjection.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AutoWireByName\objects.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="StringInjection\objects.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+  <object id = "texte" type = "XmlConfig.AutoWireByName.Texte, XmlConfig" autowire="byName">
+    <property name = "_t" value = "I am the Text"/>
+  </object>
+  <object id = "Desc" type = "XmlConfig.AutoWireByName.Description, XmlConfig">
+    <property name = "_d" value = "I am the description"/>
+  </object>
+</objects>
