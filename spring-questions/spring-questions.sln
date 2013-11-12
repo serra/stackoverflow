@@ -54,6 +54,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aop", "Aop\Aop.csproj", "{C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernateAndSpring", "NHibernateAndSpring\NHibernateAndSpring.csproj", "{9EE2A237-DF49-432F-9004-E36A82B1CF95}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "context_hierarchy_q19858418", "context_hierarchy_q19858418\context_hierarchy_q19858418.csproj", "{974BF284-1786-4E50-8402-EB2C9B86B372}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -294,6 +296,16 @@ Global
 		{9EE2A237-DF49-432F-9004-E36A82B1CF95}.Release|Mixed Platforms.Build.0 = Release|x86
 		{9EE2A237-DF49-432F-9004-E36A82B1CF95}.Release|x86.ActiveCfg = Release|x86
 		{9EE2A237-DF49-432F-9004-E36A82B1CF95}.Release|x86.Build.0 = Release|x86
+		{974BF284-1786-4E50-8402-EB2C9B86B372}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{974BF284-1786-4E50-8402-EB2C9B86B372}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{974BF284-1786-4E50-8402-EB2C9B86B372}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{974BF284-1786-4E50-8402-EB2C9B86B372}.Debug|x86.ActiveCfg = Debug|x86
+		{974BF284-1786-4E50-8402-EB2C9B86B372}.Debug|x86.Build.0 = Debug|x86
+		{974BF284-1786-4E50-8402-EB2C9B86B372}.Release|Any CPU.ActiveCfg = Release|x86
+		{974BF284-1786-4E50-8402-EB2C9B86B372}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{974BF284-1786-4E50-8402-EB2C9B86B372}.Release|Mixed Platforms.Build.0 = Release|x86
+		{974BF284-1786-4E50-8402-EB2C9B86B372}.Release|x86.ActiveCfg = Release|x86
+		{974BF284-1786-4E50-8402-EB2C9B86B372}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
